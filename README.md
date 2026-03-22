@@ -77,6 +77,16 @@
 - Easy integration
 - Well-documented code
 
+## 🛠️ Tech Stack
+
+**Framework:** SvelteKit  
+**Build Tool:** Vite  
+**Styling:** Tailwind CSS, Vanilla CSS  
+**Markup:** HTML5  
+**Programming Language:** JavaScript (ES6+)  
+**Assets & Icons:** Inline SVGs  
+**Typography:** Google Fonts  
+
 ### Events
 
 | Event | Payload | Description |
