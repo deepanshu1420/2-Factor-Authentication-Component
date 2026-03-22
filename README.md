@@ -11,8 +11,8 @@
 
 - A beautiful, responsive, and accessible 2-Factor Authentication (2FA) component built with SvelteKit, Vite,  
   Tailwind CSS, Vanilla CSS, and JavaScript (ES6+). 
-- It enables secure OTP-based verification as an additional layer of authentication, improving account protection.
-  Includes smooth animations, comprehensive keyboard navigation, and production-ready security considerations.
+- Enables secure OTP-based verification for enhanced account protection, with smooth animations, full keyboard 
+  navigation, and production-ready security.
 
 🌐 Live Demo : [View Live](https://your-live-link.com)
 
