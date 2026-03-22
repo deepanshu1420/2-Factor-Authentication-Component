@@ -7,10 +7,11 @@
 ![HTML5](https://img.shields.io/badge/HTML5-1E293B?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![JavaScript ES6+](https://img.shields.io/badge/JavaScript_ES6+-111827?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![Inline SVGs](https://img.shields.io/badge/Inline_SVGs-0F172A?style=for-the-badge&logo=svg&logoColor=ffffff)
+![Google Fonts](https://img.shields.io/badge/Google_Fonts-1F2937?style=for-the-badge&logo=googlefonts&logoColor=4285F4)
 
 A beautiful, responsive, and accessible Two-Factor Authentication (2FA) component built with SvelteKit and Tailwind CSS. Features smooth animations, comprehensive keyboard navigation, and production-ready security considerations.
 
-![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here-14532D?style=for-the-badge)
+## 🌐 Live Demo : [View Live](https://your-live-link.com)
 
 ## 📸 Demo & Screenshots
 
