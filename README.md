@@ -33,15 +33,15 @@
 ![Error](./screenshots/error.png)
 *Clear error indication for incorrect OTP input.*
 
-### 🌞 Light Mode UI
-
-![Light Mode](./screenshots/lightMode.png)
-*Elegant and readable light theme experience.*
-
 ### 📱 Responsive Design
 
 ![Responsive](./screenshots/responsive.png)
 *Fully optimized layout across mobile, tablet, and desktop devices.*
+
+### 🌞 Light Mode UI
+
+![Light Mode](./screenshots/lightMode.png)
+*Elegant and readable light theme experience.*
 
 ## ✨ Features
 
