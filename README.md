@@ -16,6 +16,39 @@
 
 🌐 Live Demo : [View Live](https://your-live-link.com)
 
+## ✨ Features
+
+- 🎨 **Modern UI** - Clean design with smooth animations, responsive layout, and status-based color feedback 
+  (default, success, error).
+- 🎯 **Micro Interactions** - Animated pulse waves, digit drop effects, and custom cursor animations.
+- 🚀 **User Experience** - Keyboard navigation (arrow keys, backspace, tab), paste support, auto-focus, auto-submit,
+  and smooth loading states.
+- ⚠️ **Error Handling** - Clear visual feedback for invalid OTP with shake animations.
+- ♿ **Accessibility** - Screen reader support, high contrast compatibility, full keyboard navigation, and a semantic
+  HTML structure for improved accessibility and usability.
+- 🔧 **Developer Friendly** - Easy integration, customizable validation, event callbacks, and well-structured
+  codebase (TypeScript-ready).
+
+## 🛠️ Tech Stack
+
+- **Framework:** SvelteKit  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS, Vanilla CSS  
+- **Markup:** HTML5  
+- **Programming Language:** JavaScript (ES6+)  
+- **Assets & Icons:** Inline SVGs  
+- **Typography:** Google Fonts  
+
+### Events
+
+| Event | Payload | Description |
+|-------|---------|-------------|
+| `success` | `{ code: string }` | Fired on successful verification |
+| `error` | `{ code: string, attempts: number }` | Fired on verification failure |
+| `input` | `{ code: string, isComplete: boolean }` | Fired on each input change |
+| `paste` | `{ code: string }` | Fired when code is pasted |
+| `reset` | None | Fired when component is reset |
+
 ## 📸 Screenshots
 
 ### 🔐 Base State
@@ -41,40 +74,7 @@
 ### 🌞 Light Mode UI
 
 ![Light Mode](./screenshots/lightMode.png)
-*Elegant and readable light theme experience.*
-
-## ✨ Features
-
-- 🎨 **Modern UI** - Clean design with smooth animations, responsive layout, and status-based color feedback 
-  (default, success, error).
-- 🎯 **Micro Interactions** - Animated pulse waves, digit drop effects, and custom cursor animations.
-- 🚀 **User Experience** - Keyboard navigation (arrow keys, backspace, tab), paste support, auto-focus, auto-submit,
-  and smooth loading states.
-- ⚠️ **Error Handling** - Clear visual feedback for invalid OTP with shake animations.
-- ♿ **Accessibility** - Screen reader support, high contrast compatibility, full keyboard navigation, and a semantic
-  HTML structure for improved accessibility and usability.
-- 🔧 **Developer Friendly** - Easy integration, customizable validation, event callbacks, and well-structured
-  codebase (TypeScript-ready).
-
-## 🛠️ Tech Stack
-
-**Framework:** SvelteKit  
-**Build Tool:** Vite  
-**Styling:** Tailwind CSS, Vanilla CSS  
-**Markup:** HTML5  
-**Programming Language:** JavaScript (ES6+)  
-**Assets & Icons:** Inline SVGs  
-**Typography:** Google Fonts  
-
-### Events
-
-| Event | Payload | Description |
-|-------|---------|-------------|
-| `success` | `{ code: string }` | Fired on successful verification |
-| `error` | `{ code: string, attempts: number }` | Fired on verification failure |
-| `input` | `{ code: string, isComplete: boolean }` | Fired on each input change |
-| `paste` | `{ code: string }` | Fired when code is pasted |
-| `reset` | None | Fired when component is reset |
+*Elegant and readable light theme experience.* 
 
 ## 📦 Setup & Installation
 
