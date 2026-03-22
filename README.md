@@ -9,7 +9,10 @@
 ![Inline SVGs](https://img.shields.io/badge/Inline_SVGs-0F172A?style=for-the-badge&logo=svg&logoColor=ffffff)
 ![Google Fonts](https://img.shields.io/badge/Google_Fonts-1F2937?style=for-the-badge&logo=googlefonts&logoColor=4285F4)
 
-A beautiful, responsive, and accessible 2-Factor Authentication (2FA) component built with SvelteKit, Vite, Tailwind CSS, Vanilla CSS, and JavaScript (ES6+). It enables secure OTP-based verification as an additional layer of authentication, improving account protection. Includes smooth animations, comprehensive keyboard navigation, and production-ready security considerations.
+- A beautiful, responsive, and accessible 2-Factor Authentication (2FA) component built with SvelteKit, Vite,  
+  Tailwind CSS, Vanilla CSS, and JavaScript (ES6+). 
+- It enables secure OTP-based verification as an additional layer of authentication, improving account protection.
+  Includes smooth animations, comprehensive keyboard navigation, and production-ready security considerations.
 
 🌐 Live Demo : [View Live](https://your-live-link.com)
 
