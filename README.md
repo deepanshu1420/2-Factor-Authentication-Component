@@ -45,12 +45,16 @@
 
 ## ✨ Features
 
-* 🎨 **Modern UI** — Clean design with smooth animations, responsive layout, and status-based color feedback (default, success, error)
-* 🎯 **Micro Interactions** — Animated pulse waves, digit drop effects, and custom cursor animations
-* 🚀 **User Experience** — Keyboard navigation (arrow keys, backspace, tab), paste support, auto-focus, auto-submit, and smooth loading states
-* ⚠️ **Error Handling** — Clear visual feedback for invalid OTP with shake animations
-* ♿ **Accessibility** — Screen reader support, high contrast compatibility, full keyboard navigation, and semantic structure
-* 🔧 **Developer Friendly** — Easy integration, customizable validation, event callbacks, and well-structured codebase (TypeScript-ready)
+- 🎨 **Modern UI** - Clean design with smooth animations, responsive layout, and status-based color feedback 
+                      (default, success, error)
+- 🎯 **Micro Interactions** - Animated pulse waves, digit drop effects, and custom cursor animations
+- 🚀 **User Experience** - Keyboard navigation (arrow keys, backspace, tab), paste support, auto-focus, auto-submit,
+                            and smooth loading states
+- ⚠️ **Error Handling** - Clear visual feedback for invalid OTP with shake animations
+- ♿ **Accessibility** - Screen reader support, high contrast compatibility, full keyboard navigation, and semantic 
+                          structure
+- 🔧 **Developer Friendly** - Easy integration, customizable validation, event callbacks, and well-structured
+                               codebase (TypeScript-ready)
 
 ## 🛠️ Tech Stack
 
