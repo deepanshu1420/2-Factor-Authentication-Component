@@ -1,4 +1,4 @@
-# 🔓 2-Factor Authentication Component 🔓
+# 🔐 2-Factor Authentication Component 🔓
 
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-1E293B?style=for-the-badge&logo=svelte&logoColor=FF3E00)
 ![Vite](https://img.shields.io/badge/Vite-2B2D42?style=for-the-badge&logo=vite&logoColor=FFD62E)
