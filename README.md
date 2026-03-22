@@ -11,7 +11,7 @@
 
 A beautiful, responsive, and accessible Two-Factor Authentication (2FA) component built with SvelteKit and Tailwind CSS. Features smooth animations, comprehensive keyboard navigation, and production-ready security considerations.
 
-## 🌐 Live Demo : [View Live](https://your-live-link.com)
+🌐 Live Demo : [View Live](https://your-live-link.com)
 
 ## 📸 Demo & Screenshots
 
