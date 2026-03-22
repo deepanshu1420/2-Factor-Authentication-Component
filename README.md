@@ -81,7 +81,7 @@
 1. **Clone the repository**
 ```bash
 git clone https://github.com/deepanshu1420/2-Factor-Authentication-Component.git
-cd Two-Factor-Authentication-component
+cd 2-Factor-Authentication-Component
 ```
 
 2. **Install dependencies**
