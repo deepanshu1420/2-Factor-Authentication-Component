@@ -24,7 +24,6 @@
     // Update button state reactively
     $: {
         if (isLoading) {
-            buttonText = '';
             isButtonDisabled = true;
         } else if (currentState === 'success') {
             buttonText = "Let's go!";
@@ -73,6 +72,11 @@
         const input = event.target;
         const value = input.value;
 
+        // Reset error state if user starts typing again
+        if (currentState === 'error') {
+            setState('default', 'Enter 6-digit code from your two factor authenticator APP');
+        }
+
         if (!/^\d$/.test(value)) {
             input.value = '';
             return;
@@ -95,6 +99,11 @@
         const input = event.target;
         const container = otpContainers[index];
         const digitDisplay = container?.querySelector('.digit-display');
+
+        // Reset error state on backspace
+        if (currentState === 'error' && event.key === 'Backspace') {
+            setState('default', 'Enter 6-digit code from your two factor authenticator APP');
+        }
 
         if (event.key === 'Backspace') {
             if (!digitDisplay?.textContent && index > 0) {
@@ -133,6 +142,11 @@
     function handlePaste(event, index) {
         event.preventDefault();
         const pastedData = event.clipboardData.getData('text').replace(/\D/g, ''); 
+
+        // Reset error state on paste
+        if (currentState === 'error') {
+            setState('default', 'Enter 6-digit code from your two factor authenticator APP');
+        }
 
         if (pastedData.length > 0) {
             otpContainers.forEach((container, i) => {
@@ -246,6 +260,8 @@
             setState('error', 'Please enter all 6 digits');
             return;
         }
+        if (isLoading) return; // Prevent double-clicks
+        
         isLoading = true;
         await simulateVerification();
     }
@@ -411,29 +427,40 @@
             <button
                 class="action-button relative py-4 mt-2 rounded-2xl cursor-pointer font-semibold transition-all duration-300 ease-in-out overflow-hidden w-full
                     {isButtonDisabled 
-                        ? (isDarkMode ? 'opacity-60 cursor-not-allowed bg-white/10 text-white/50 border border-white/10' : 'cursor-not-allowed bg-white/40 text-gray-500 border border-white/60')
+                        ? (isDarkMode ? 'opacity-60 cursor-not-allowed bg-white/10 text-white/50 border border-white/10' : 'opacity-60 cursor-not-allowed bg-black/5 text-gray-500 border border-black/10')
                         : currentState === 'error' 
-                            ? 'bg-[#ff4359] text-white hover:shadow-[0px_4px_12px_rgba(255,59,48,0.3)] hover:-translate-y-0.5 active:translate-y-0 border border-transparent'
-                            : 'bg-[#007AFF] text-white hover:shadow-[0px_4px_16px_rgba(0,122,255,0.4)] hover:-translate-y-0.5 active:translate-y-0 border border-blue-500/50'}
-                    {isLoading ? 'relative text-transparent' : ''}"
-                disabled={isButtonDisabled}
+                            ? 'bg-[#FF3B30] text-white hover:shadow-[0px_4px_12px_rgba(255,59,48,0.3)] hover:-translate-y-0.5 active:translate-y-0 border border-transparent'
+                            : currentState === 'success'
+                                ? 'bg-[#34C759] text-white hover:shadow-[0px_4px_12px_rgba(52,199,89,0.3)] hover:-translate-y-0.5 active:translate-y-0 border border-transparent'
+                                : 'bg-[#007AFF] text-white hover:shadow-[0px_4px_16px_rgba(0,122,255,0.4)] hover:-translate-y-0.5 active:translate-y-0 border border-blue-500/50'}"
+                disabled={isButtonDisabled || isLoading}
                 on:click={handleSubmit}
             >
-                {#if currentState === 'success'}
+                {#if currentState === 'success' && !isLoading}
                     <div class="success-bg-animation absolute top-0 left-0 w-full h-full bg-[#34C759] z-0"></div>
                 {/if}
-                <span class="relative z-10">
-                    {#if isLoading}
-                        <div class="flex items-center justify-center h-6">
-                            <div class="w-5 h-5 border-2 border-transparent border-t-white rounded-full animate-spin"></div>
-                        </div>
-                    {:else}
-                        {buttonText}
-                    {/if}
+                
+                <span class="relative z-10 flex items-center justify-center w-full h-full transition-opacity duration-200 {isLoading ? 'opacity-0' : 'opacity-100'}">
+                    {buttonText}
                 </span>
+
+                {#if isLoading}
+                    <div class="absolute inset-0 flex items-center justify-center z-20">
+                        <div class="w-5 h-5 border-2 border-transparent {isDarkMode ? 'border-t-white' : 'border-t-gray-500'} rounded-full animate-spin"></div>
+                    </div>
+                {/if}
             </button>
         </div>
     </div>
+
+    <div class="absolute bottom-4 sm:bottom-6 left-0 w-full text-center z-20 text-xs sm:text-sm transition-colors duration-300 {isDarkMode ? 'text-white/50' : 'text-gray-500'}">
+        Developed by 
+        <a href="https://github.com/deepanshu1420" target="_blank" rel="noopener noreferrer" 
+           class="font-semibold transition-colors duration-300 {isDarkMode ? 'text-gray-300 hover:text-[#3b82f6]' : 'text-gray-700 hover:text-[#007AFF]'}">
+            Deepanshu Sharma
+        </a>
+    </div>
+
 </div>
 
 <style>
