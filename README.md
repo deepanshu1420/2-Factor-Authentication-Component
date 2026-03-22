@@ -16,33 +16,32 @@
 
 🌐 Live Demo : [View Live](https://your-live-link.com)
 
-### 📱 Screenshots
+## 📸 Screenshots
 
-#### Base State
+### 🔐 Base State
 
-![Base State](screenshots/base.png)
-*Clean and modern default interface*
+![Base](./screenshots/base.png)
+*Clean and minimal default interface for entering OTP.*
 
-#### Success State
+### ✅ Success State
 
-![Success State](screenshots/success.png)
-*Smooth visual feedback on successful authentication*
+![Success](./screenshots/success.png)
+*Smooth visual feedback when authentication is successful.*
 
-#### Error State
+### ❌ Error State
 
-![Error State](screenshots/error.png)
-*Clear error indication for incorrect OTP*
+![Error](./screenshots/error.png)
+*Clear error indication for incorrect OTP input.*
 
-#### Light Mode
+### 🌞 Light Mode UI
 
-![Light Mode](screenshots/lightMode.png)
-*Elegant and readable light theme experience*
+![Light Mode](./screenshots/lightMode.png)
+*Elegant and readable light theme experience.*
 
-#### Responsive View
+### 📱 Responsive Design
 
-![Responsive View](screenshots/responsive.png)
-*Fully responsive design across devices*
-
+![Responsive](./screenshots/responsive.png)
+*Fully optimized layout across mobile, tablet, and desktop devices.*
 
 ## ✨ Features
 
