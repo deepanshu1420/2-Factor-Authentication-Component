@@ -16,26 +16,33 @@
 
 🌐 Live Demo : [View Live](https://your-live-link.com)
 
-## 📸 Demo & Screenshots
-
-### 🎥 Video Demo
-![Two-Factor Authentication Demo](screenshots/original.mp4)
-
-*Watch the complete demonstration of the Two-Factor Authentication component in action*
-
 ### 📱 Screenshots
 
 #### Base State
-![Base State](screenshots/base.jpg)
-*Clean, modern interface in the default state*
+
+![Base State](screenshots/base.png)
+*Clean and modern default interface*
 
 #### Success State
-![Success State](screenshots/success.jpg)
-*Visual feedback when authentication is successful*
+
+![Success State](screenshots/success.png)
+*Smooth visual feedback on successful authentication*
 
 #### Error State
-![Error State](screenshots/error.jpg)
-*Clear error indication for invalid codes*
+
+![Error State](screenshots/error.png)
+*Clear error indication for incorrect OTP*
+
+#### Light Mode
+
+![Light Mode](screenshots/lightMode.png)
+*Elegant and readable light theme experience*
+
+#### Responsive View
+
+![Responsive View](screenshots/responsive.png)
+*Fully responsive design across devices*
+
 
 ## ✨ Features
 
