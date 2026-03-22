@@ -39,7 +39,7 @@
 - **Assets & Icons:** Inline SVGs  
 - **Typography:** Google Fonts  
 
-### Events
+## 📡 Events
 
 | Event | Payload | Description |
 |-------|---------|-------------|
