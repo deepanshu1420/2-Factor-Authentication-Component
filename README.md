@@ -91,7 +91,7 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Sanskargupta0/Two-Factor-Authentication-component.git
+git clone https://github.com/deepanshu1420/2-Factor-Authentication-Component.git
 cd Two-Factor-Authentication-component
 ```
 
